@@ -6,7 +6,7 @@ An ESP32-based soil-irrigation system with a Firebase Realtime Database and a Re
 >
 > - Running web system: https://aquasense-grp25.web.app
 > - Project repository: https://github.com/Godwin606/aquasense
-> - Project website: _add GitHub Pages URL_
+> - Project website: https://godwin606.github.io/aquasense/ (available after GitHub Pages is enabled)
 > - Demonstration video: _add video URL if required_
 
 ## Features

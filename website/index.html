@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AquaSense — Smart Irrigator</title>
+  <meta name="description" content="AquaSense is an ESP32 and Firebase smart irrigation system with farmer-friendly live monitoring and adaptive insights.">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+</head>
+<body>
+  <div class="menu-container"></div>
+
+  <header class="aqua-hero" id="overview">
+    <div class="hero-content">
+      <p class="eyebrow">ESP32 + FIREBASE + EXPO</p>
+      <h1>AquaSense</h1>
+      <h2>Smart irrigation that a farmer can understand at a glance.</h2>
+      <p class="hero-copy">AquaSense monitors soil moisture, irrigates in safe pulses, stores irrigation history in the cloud, and gives the farmer a clear live dashboard from anywhere with internet access.</p>
+      <div class="hero-actions">
+        <a class="aqua-button primary" href="https://aquasense-grp25.web.app" target="_blank" rel="noopener">Open live system <i class="fas fa-external-link-alt"></i></a>
+        <a class="aqua-button secondary" href="https://github.com/Godwin606/aquasense" target="_blank" rel="noopener">View source code <i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="content-table flex-column">
+      <section class="project-section" id="problem">
+        <p class="section-label">THE PROBLEM</p>
+        <h2>Plants are easily over-watered or left dry when irrigation is manual.</h2>
+        <p class="text">Small-scale farmers need a simple way to see the condition of soil and act quickly without staying next to the garden. AquaSense turns live sensor readings into clear dry/wet status, automatic watering, and a remote control interface.</p>
+      </section>
+
+      <section class="project-section" id="solution">
+        <p class="section-label">THE SOLUTION</p>
+        <h2>One system, from soil sensor to farmer dashboard.</h2>
+        <div class="architecture">
+          <div class="architecture-card"><i class="fas fa-seedling"></i><strong>Soil sensor</strong><span>Measures moisture</span></div>
+          <i class="fas fa-arrow-right architecture-arrow"></i>
+          <div class="architecture-card"><i class="fas fa-microchip"></i><strong>ESP32</strong><span>Runs irrigation logic</span></div>
+          <i class="fas fa-arrow-right architecture-arrow"></i>
+          <div class="architecture-card"><i class="fas fa-cloud"></i><strong>Firebase</strong><span>Synchronizes live data</span></div>
+          <i class="fas fa-arrow-right architecture-arrow"></i>
+          <div class="architecture-card"><i class="fas fa-mobile-alt"></i><strong>AquaSense app</strong><span>Shows and controls the system</span></div>
+        </div>
+      </section>
+
+      <section class="project-section" id="features">
+        <p class="section-label">KEY FEATURES</p>
+        <h2>Designed for clarity, safety, and remote access.</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><i class="fas fa-tint"></i><h3>Automatic pulsed irrigation</h3><p>When soil becomes dry, the pump runs for a five-second pulse, then waits six seconds for the soil to settle before checking again.</p></article>
+          <article class="feature-card"><i class="fas fa-globe-africa"></i><h3>Works from anywhere</h3><p>The ESP32 and app communicate through Firebase Realtime Database, so the farmer can monitor the system over mobile data or Wi-Fi.</p></article>
+          <article class="feature-card"><i class="fas fa-history"></i><h3>Irrigation history</h3><p>Moisture readings, pump changes, and soil-status events are stored in the cloud and displayed as a simple trend chart.</p></article>
+          <article class="feature-card"><i class="fas fa-brain"></i><h3>AI-assisted insights</h3><p>AquaSense calculates drying-rate and pump-recovery recommendations. A farmer must approve any suggested threshold before it affects irrigation.</p></article>
+        </div>
+      </section>
+
+      <section class="project-section" id="demo">
+        <p class="section-label">LIVE DEMO</p>
+        <h2>Explore the running system.</h2>
+        <p class="text">The public web dashboard below reads the same Firebase data as the mobile app. It shows current moisture, pump state, history, and farmer controls.</p>
+        <div class="live-frame-wrap">
+          <iframe class="live-frame" title="AquaSense running web dashboard" src="https://aquasense-grp25.web.app" loading="lazy"></iframe>
+        </div>
+        <p class="text center-text"><a class="aqua-button primary" href="https://aquasense-grp25.web.app" target="_blank" rel="noopener">Open dashboard in a new tab</a></p>
+      </section>
+
+      <section class="project-section" id="implementation">
+        <p class="section-label">IMPLEMENTATION</p>
+        <h2>Hardware and software stack.</h2>
+        <div class="stack-grid">
+          <div><h3>Hardware</h3><ul><li>ESP32 DevKit</li><li>Resistive soil moisture sensor</li><li>16×2 I2C LCD</li><li>Relay and 5V water pump</li><li>Status LEDs and buzzer</li></ul></div>
+          <div><h3>Cloud and app</h3><ul><li>Firebase Realtime Database</li><li>React Native with Expo</li><li>Firebase Hosting web dashboard</li><li>Arduino C++ firmware</li><li>GitHub source repository</li></ul></div>
+        </div>
+      </section>
+
+      <section class="project-section" id="team">
+        <p class="section-label">TEAM</p>
+        <h2>A university project by the AquaSense team.</h2>
+        <p class="text"><strong>Project lead:</strong> Godwin Ssemwogerere<br><strong>Institution:</strong> <em>Add university / department here before final submission.</em><br><strong>Supervisor:</strong> <em>Add supervisor name here before final submission.</em></p>
+      </section>
+    </div>
+  </main>
+
+  <div class="footer-container"></div>
+</body>
+</html>

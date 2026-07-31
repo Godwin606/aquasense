@@ -6,6 +6,7 @@ mobile/node_modules/
 mobile/.expo/
 mobile/dist/
 mobile/web-build/
+.firebase/
 
 # Local environment files and logs
 .env
