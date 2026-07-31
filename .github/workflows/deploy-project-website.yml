@@ -28,6 +28,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Creates/enables the Pages site if GitHub has not finished doing so yet.
+          enablement: true
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v3
         with:
