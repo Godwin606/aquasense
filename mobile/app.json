@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "AquaSense",
+    "slug": "aquasense",
+    "scheme": "aquasense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aquasense.smartirrigator"
+    },
+    "android": {
+      "package": "com.aquasense.smartirrigator",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "05e9e42c-1e27-4eda-b6ea-92d24f7bce14"
+      }
+    }
+  }
+}

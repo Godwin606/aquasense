@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "aquasense": {
+      ".read": true,
+      ".write": true,
+      "history": {
+        ".indexOn": ["timestamp"]
+      }
+    }
+  }
+}

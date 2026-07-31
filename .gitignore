@@ -1,0 +1,15 @@
+# ESP32 credentials
+firmware/SMART_IRRIGATOR/secrets.h
+
+# Node/Expo generated files
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+
+# Local environment files and logs
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
