@@ -2,3 +2,6 @@
 .DS_Store
 .idea/
 
+# Keep the original Apple captures locally; publish the converted JPG/MP4 versions.
+assets/media/*.HEIC
+assets/media/*.MOV
